@@ -1,7 +1,7 @@
 def cadena_parentesis_valida(cadena):
     pila=[]
     # correspondiente :
-    parentesis = {'{': '}', '(': ')', '[':']'}
+    parentesis = {'(': ')', '[':']'}
 
     # interar 
     for c in cadena:
@@ -13,5 +13,5 @@ def cadena_parentesis_valida(cadena):
             
     return len(pila)==0
 
-print (cadena_parentesis_valida('()[]{}'))
-print (cadena_parentesis_valida('()[]{}]'))
+print (cadena_parentesis_valida('()[]'))
+print (cadena_parentesis_valida('()[]]'))
